@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Викторины</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в Викторины!</h1>
+        <p>Выберите свою тему и проверьте свои знания:</p>
+    </header>
+
+    <div class="quiz-container">
+        <div class="quiz-item">
+            <img src="ai.jpg" alt="AI Quiz">
+            <button onclick="startQuiz('school')">AI или реальность?</button>
+        </div>
+        <div class="quiz-item">
+            <img src="anime.jpg" alt="Anime Quiz">
+            <button onclick="startQuiz('anime')">Аниме викторина</button>
+        </div>
+        <div class="quiz-item">
+            <img src="logo.jpg" alt="Logo Quiz">
+            <button onclick="startQuiz('logos')">Угадай логотипы</button>
+        </div>
+    </div>
+    
+    
+
+    <div id="quiz" class="hidden">
+        <div class="quiz-header">
+            <div id="timer">Время: <span id="time">100</span> сек</div>
+            <div id="score">Очки: <span id="points">0</span></div>
+        </div>
+
+        <div id="question-area">
+            <img id="question-image" src="" alt="Quiz Image">
+            <div id="question-content">
+                <p id="question-text"></p>
+                <div id="options-container"></div>
+            </div>
+        </div>
+
+        <button id="next" class="hidden" onclick="nextQuestion()">Следующий вопрос</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
