@@ -46,11 +46,6 @@ Technical Details
 - Question Progression Logic: After the user answers a question, the application checks the answer. Then, it either displays the next question or ends the quiz if all questions have been answered.
 - Page Reload: Once the quiz is finished, the page reloads, allowing the user to start a new game.
 
-Future Improvements
-- Adding new categories and questions to expand the quiz topics.
-- Implementing a user score tracking system and displaying a leaderboard.
-- Adding explanations for each question after the quiz ends.
-- Multi-language support for users from different countries.
 
 Technologies Used
 - HTML: For creating the structure of the webpage.
